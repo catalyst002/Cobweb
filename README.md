@@ -1,15 +1,15 @@
 # Cobweb.social
-
-This project is a fork of friend.tech powered by Spiderchain. 
+The project I've developed for this Spiderhack hackathon is a decentralized application (dApp) built on the Spiderhack blockchain, named "Cobweb." It's a blend of a shares platform and a decentralized voting system that leverages blockchain technology to create a new form of governance and ownership distribution.
+This project is a forkde from friend.tech with upgraded functionality powered by Spiderchain. 
 
 # Video Demo
 
-link: ********
+link: https://www.youtube.com/watch?v=uYFf-wcxNm0
 
 
 
 ## Getting Started
-To test app you can proceed by the link: ********
+To test app you can proceed by the link: https://cobweb-social.vercel.app/
 
 Or build it local
 
