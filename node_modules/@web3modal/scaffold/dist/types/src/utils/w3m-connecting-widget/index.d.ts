@@ -1,0 +1,34 @@
+import type { IconType } from '@web3modal/ui';
+import { LitElement } from 'lit';
+export declare class W3mConnectingWidget extends LitElement {
+    static styles: import("lit").CSSResult;
+    protected readonly wallet: import("@web3modal/core").WcWallet | undefined;
+    protected readonly connector: import("@web3modal/core").Connector | undefined;
+    protected timeout?: ReturnType<typeof setTimeout>;
+    protected secondaryBtnLabel: string;
+    protected secondaryBtnIcon: IconType;
+    protected secondaryLabel: string;
+    protected onConnect?: (() => void) | (() => Promise<void>);
+    protected onRender?: (() => void) | (() => Promise<void>);
+    protected onAutoConnect?: (() => void) | (() => Promise<void>);
+    protected isWalletConnect: boolean;
+    private unsubscribe;
+    private imageSrc;
+    private name;
+    private isRetrying;
+    protected uri: string | undefined;
+    protected error: boolean | undefined;
+    protected ready: boolean;
+    private showRetry;
+    buffering: boolean;
+    isMobile: boolean;
+    onRetry?: (() => void) | (() => Promise<void>);
+    constructor();
+    firstUpdated(): void;
+    disconnectedCallback(): void;
+    render(): import("lit-html").TemplateResult<1>;
+    private onShowRetry;
+    private onTryAgain;
+    private loaderTemplate;
+    protected onCopyUri(): void;
+}

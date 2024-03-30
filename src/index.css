@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+ 
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+ 
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+ 
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+ 
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+ 
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+ 
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+ 
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+ 
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+ 
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+ 
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+ 
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+  
+.outerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1A1A1D;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 10px;
+    height: 60%;
+    width: 35%;
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .outerContainer {
+      height: 100%;
+    }
+  
+    .container {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 1200px) {
+    .container {
+      width: 60%;
+    }
+  }
+  .form {
+    display: flex;
+    border-top: 2px solid #D3D3D3;
+  }
+  
+  .input {
+    border: none;
+    border-radius: 3px;
+    padding: 5%;
+    width: 80%;
+    font-size: 1.2em;
+  }
+  
+  input:focus, textarea:focus, select:focus{
+    outline: none;
+  }
+  
+  .sendButton {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 95%;
+    background: #1C5AE0;
+    padding: 20px;
+    display: inline-block;
+    border: none;
+    border-radius: 1px;
+    width: 20%;
+    cursor: pointer;
+    transition-delay: 3s;
+  }
+
+  
