@@ -157,7 +157,7 @@ async function checkIsKeyHolder(subject: any) {
     });
     const friend = new ethers.Contract(contractAddress, contractABI, await getProvider())
     const result = await friend.isHolder(subject, addr[0])
-    console.log(`$sucksesfuly holder ${result}`)
+
     if (result > 0) {
       return true;
     } else {
@@ -165,7 +165,7 @@ async function checkIsKeyHolder(subject: any) {
     }
   }
   catch (error){
-      console.log(`${JSON.stringify(error)} failed dodik`)
+      console.log(`${JSON.stringify(error)} failed`)
   }
 }
 

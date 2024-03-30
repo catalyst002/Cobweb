@@ -32,9 +32,12 @@ io.on('connection', (socket) => {
 
   // eslint-disable-next-line consistent-return
   socket.on('joinRoom', ({ name, room }, callback) => {
+    if (typeof name !== 'string' || typeof room !== 'string') {
+      return;
+    }
     const { error, user } = addUser({ id: socket.id, name, room });
 
-    if (error) return error;
+    if (error) return;
 
     socket.join(user.room);
     console.log('USER', socket.id);
