@@ -10,6 +10,7 @@ link: https://www.youtube.com/watch?v=uYFf-wcxNm0
 
 ## Getting Started
 To test app you can proceed by the link: https://cobweb-social.vercel.app/
+Smart contract address: [0xe3502f370a09876B41687f6a0E61a695d4b97123](https://blockscout.botanixlabs.dev/address/0xe3502f370a09876B41687f6a0E61a695d4b97123)
 
 Or build it local
 
