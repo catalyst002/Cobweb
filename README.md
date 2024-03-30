@@ -1,49 +1,43 @@
-# Cobweb.social
-The project I've developed for this Spiderhack hackathon is a decentralized application (dApp) built on the Spiderhack blockchain, named "Cobweb." It's a blend of a shares platform and a decentralized voting system that leverages blockchain technology to create a new form of governance and ownership distribution.
-This project is a forkde from friend.tech with upgraded functionality powered by Spiderchain. 
+# Cobweb.social: A Social platform
 
-# Video Demo
+Cobweb is an dApp developed for the Spiderhack hackathon. It stands at the intersection of a shares platform and a decentralized voting system, leveraging the power of the Spiderhack blockchain to usher in a novel form of governance and ownership distribution. Cobweb is an enhanced fork of friend.tech, with added functionalities powered by Spiderchain.
 
-link: https://www.youtube.com/watch?v=uYFf-wcxNm0
+## Video Demo
 
+Watch a detailed demonstration of Cobweb on YouTube: [Watch Demo](https://www.youtube.com/watch?v=uYFf-wcxNm0)
 
+## Getting Started with Cobweb
 
-## Getting Started
-To test app you can proceed by the link: https://cobweb-social.vercel.app/  
-Smart contract address: [0xe3502f370a09876B41687f6a0E61a695d4b97123](https://blockscout.botanixlabs.dev/address/0xe3502f370a09876B41687f6a0E61a695d4b97123)
+To explore Cobweb, you can directly access the application or set it up locally on your system. Here are the ways to get started:
 
-Or build it local
+### Access the Live Application
 
-To get the application running, follow these steps:
+- **Application URL**: [Visit Cobweb](https://cobweb-social.vercel.app/)
+- **Smart Contract Address**: [0xe3502f370a09876B41687f6a0E61a695d4b97123](https://blockscout.botanixlabs.dev/address/0xe3502f370a09876B41687f6a0E61a695d4b97123)
 
-1. Clone the repository: `git clone https://github.com/catalyst002/react.git`
-2. Navigate into the directory: `cd react`
-3. setup supabase client secret : create a .env file with the following content (development credentials).You could also create a fresh project with table `subjects` and column as `roomId` in supabase
+### Local Setup
 
-```
-VITE_SUPABASE_ANON_KEY=
+Follow these steps to run Cobweb on your local machine:
+
+1. **Clone the Repository**:
+`git clone https://github.com/catalyst002/Cobweb.git`
+2. **Navigate to the Directory**:
+`cd Cobweb`
+3. **Set Up Supabase Client Secret**: Create a `.env` file in the root directory with your Supabase development credentials. Optionally, set up a Supabase project with a `subjects` table that includes a `roomId` column. VITE_SUPABASE_ANON_KEY=
 VITE_SUPABASE_PROJECT_URL=
-```
-
-4. Install the dependencies: `yarn install`
-5. Start the frontend development server: `yarn dev`
-6. Open a new terminal session
-7. Install the dependencies for the chat server: `cd server && yarn install`
-8. Start the chat server: `yarn start`
-9. Run deployer.mjs `node deployer.mjs` to deploy contract
-10. Open the application in your browser: `http://localhost:5173/`
-    
-
-
-## Setup
-
-Before getting into testing the application you need to spin up the devnet. This applications uses devnet to interact with the smart contract. To spin up the devnet, follow these steps:
-
-In a new terminal session run the command:
-
-1. `anvil --fork-url https://node.botanixlabs.dev`
-2. Once the fork is up and running start testing
-3. For testing we'll be using chrome user 1 as subject 1 and chrome user 2 as holder of this subject
-
-
-
+4. **Install Dependencies**:
+`yarn install`
+5. **Start the Frontend Development Server**: 
+`yarn dev`
+6. **Open a New Terminal Session for the Chat Server**:
+`cd server && yarn install`
+7. **Start the Chat Server**:
+`yarn start`
+8. **Deploy the Smart Contract**: 
+`node deployer.mjs`
+9. **Access the Application**: Open `http://localhost:5173/` in your browser.
+## Initial Setup for Development Testing
+Before you can test Cobweb, ensure the development network (testnet) is running. Follow these steps to set up the testnet:
+1. **Start the local testnet**: In a new terminal, run:
+`anvil --fork-url https://node.botanixlabs.dev`
+2. **Begin Testing**: With the fork operational, you're ready to test using different Chrome user profiles to simulate various subjects and holders.
