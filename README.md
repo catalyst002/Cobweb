@@ -9,7 +9,7 @@ link: https://www.youtube.com/watch?v=uYFf-wcxNm0
 
 
 ## Getting Started
-To test app you can proceed by the link: https://cobweb-social.vercel.app/ /
+To test app you can proceed by the link: https://cobweb-social.vercel.app/  
 Smart contract address: [0xe3502f370a09876B41687f6a0E61a695d4b97123](https://blockscout.botanixlabs.dev/address/0xe3502f370a09876B41687f6a0E61a695d4b97123)
 
 Or build it local
@@ -41,7 +41,7 @@ Before getting into testing the application you need to spin up the devnet. This
 
 In a new terminal session run the command:
 
-1. `anvil --fork-url https://gateway.tenderly.co/public/mainnet`
+1. `anvil --fork-url https://node.botanixlabs.dev`
 2. Once the fork is up and running start testing
 3. For testing we'll be using chrome user 1 as subject 1 and chrome user 2 as holder of this subject
 
