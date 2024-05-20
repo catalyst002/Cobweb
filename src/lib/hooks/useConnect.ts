@@ -76,7 +76,7 @@ const useConnect = () => {
 
   useEffect(() => {
     fetchBalance();
-  }, []);
+  });
 
   const connect = () => {
     const { open } = useWeb3Modal();
