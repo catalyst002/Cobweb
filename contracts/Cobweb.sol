@@ -123,7 +123,7 @@ contract Cobweb is Ownable {
     address public protocolFeeDestination;
     uint256 public protocolFeePercent;
     uint256 public subjectFeePercent;
-
+// Struct for proposals on creator page
     struct Proposal {
         uint id;
         string title;
