@@ -43,7 +43,6 @@ const ChatRoomUI: React.FC = () => {
     socketRef.current?.on('message', (message: IMessage) => {
       setMessages((msgs) => [...msgs, message]);
     });
-
     socketRef.current?.on('roomData', ({ users }: { users: string[] }) => {
       setUsers(users);
     });
